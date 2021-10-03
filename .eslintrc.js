@@ -4,7 +4,7 @@ module.exports = {
     ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
   },
-  ignorePatterns: ['dist/', 'webpack.config.js'],
+  ignorePatterns: ['dist/', '_webpack.config.js'],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:jsdoc/recommended',
