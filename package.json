@@ -1,9 +1,11 @@
 {
-    "name": "brackets-viewer",
-    "version": "1.4.1",
+    "name": "@szaqku/brackets-viewer",
+    "version": "1.4.6s",
     "description": "A simple library to display tournament brackets (round-robin, single elimination, double elimination)",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "files": [
-        "dist/"
+        "/dist"
     ],
     "scripts": {
         "db": "npx json-server --watch demo/db.json",
@@ -13,10 +15,7 @@
         "prepublishOnly": "npm run build",
         "lint": "eslint '**/*.{js,ts}' --fix"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Drarig29/brackets-viewer.js.git"
-    },
+    "repository": "https://github.com/szaqku/wbta-frontend",
     "keywords": [
         "javascript",
         "tournament",

@@ -7,9 +7,14 @@
         "types": [
             "brackets-model"
         ],
+        "lib": [ "es2019", "dom" ],
+        "outDir": "./dist",
+        "sourceMap": true,
+        "declaration": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
-        "noImplicitAny": true
-    }
+        "noImplicitAny": true,
+    },
+    "include": ["src"]
 }

@@ -1,4 +1,3 @@
-import './style.scss';
 import { Participant, Match, ParticipantResult, Stage, Status } from 'brackets-model';
 import { splitBy, getRanking, getOriginAbbreviation, findRoot, completeWithBlankMatches } from './helpers';
 import * as dom from './dom';
@@ -398,11 +397,11 @@ export class BracketsViewer {
             result: dom.createResultContainer(),
         };
 
-        if (participant === null || participant === undefined) 
+        if (participant === null || participant === undefined)
             containers.name.innerText = lang.BYE;
-         else 
+         else
             this.renderParticipant(containers, participant, side, originHint, matchLocation, roundNumber);
-        
+
 
         containers.participant.append(containers.name, containers.result);
 
